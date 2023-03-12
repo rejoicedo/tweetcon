@@ -1,0 +1,194 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 10px;
+    gap: 10px;
+
+    width: 100%;
+
+    background: url('../../assets/footer.PNG');
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: var(--container-width-lg);
+    height: 100%;
+
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 48px;
+}
+
+.footer-top hr {
+    padding: 10px;
+    gap: 10px;
+
+    background: #CBAB81;
+    border-radius: 50px;
+    opacity: 0.3;
+    
+    width: 60%;
+    height: 10px;
+}
+
+.footer-top h2 {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.footer-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 15px;
+    padding-bottom: 40px;
+}
+
+.footer-middle img {
+    width: 150px;
+    height: 150px;
+}
+
+.mid-icontext {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 10px;
+}
+
+.mid-icontext p {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 15px;
+    /* identical to box height, or 61% */
+
+    letter-spacing: 0.1em;
+
+    /* White */
+
+    color: #FFFFFF;
+}
+
+.mid-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+.mid-icon hr {
+    width: 34.2px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transform: rotate(-90deg);
+}
+
+.all-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+}
+
+.footer-bottom h6 {
+    width: 212px;
+    height: 15px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 15px;
+    /* identical to box height, or 61% */
+
+    letter-spacing: 3px;
+    color: #FFFFFF;
+}
+
+.footer-bottom p {
+    width: 306px;
+    height: 15px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 15px;
+    /* identical to box height, or 61% */
+
+    letter-spacing: 3px;
+
+    /* tweet */
+
+    color: #CBAB81;
+}
+
+/* ============ MEDIA QUERIES (MEDIUM DEVICES) ========== */
+@media screen and (max-width: 1024px) {
+    
+}
+
+
+
+/* ============ MEDIA QUERIES (SMALL DEVICES) ========== */
+@media screen and (max-width: 767px) {
+    .sponsor-main {
+        width: var(--container-width-sm);
+    }
+    
+    .sponsor-main h2 {
+        font-size: 28px;
+    }
+
+    .box-right h2 {
+        font-size: 20px;
+    }
+
+    .main-pitch {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pitch-box {
+        gap: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

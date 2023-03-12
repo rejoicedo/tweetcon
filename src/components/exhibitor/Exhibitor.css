@@ -1,0 +1,282 @@
+.exhibitor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+    gap: 10px;
+
+    width: 100%;
+}
+
+.exhibitor-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: var(--container-width-lg);
+    height: 100%;
+}
+
+.exhibitor-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    width: 944px;
+    padding-bottom: 16px;
+}
+
+.exhibitor-pitch {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    gap: 12%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+
+    max-width: 100%;
+}
+
+.exhibit-pitch-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 0px;
+    gap: 10px;
+    align-self: flex-start;
+    
+    width: 100%;
+
+}
+
+.exhibit-pitch-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.exhibit-box-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 50px;
+
+
+    /* tweet */
+
+    background: #CBAB81;
+    border-radius: 10px;
+}
+
+.exhibit-box-left p {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 5px;
+    /* black */
+
+    color: #333333;
+    width: max-content;
+
+    transform: rotate(-90deg);
+}
+
+.exhibit-box-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    gap: 8px;
+    padding-top: 15px;
+}
+
+.exhibit-box-right h2 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    color: #CBAB81;
+
+    text-shadow: 2px 10px 4px rgba(255, 255, 255, 0.2);
+}
+
+.exhibit-box-right p {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: flex-end;
+
+    /* black */
+
+    color: #333333;
+
+    margin: 0;
+    
+}
+
+.exhibit-pitch-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+
+    width: 100%;
+    height: 574px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.exhibit-pitch-right input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 15px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid #CBAB81;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px #0000004d inset;
+
+
+    width: 100%;
+}
+
+.exhibit-pitch-right textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 15px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    gap: 10px;
+    border: 1px solid #CBAB81;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px #0000004d inset;
+    width: 100%;
+    height: 10rem;
+}
+
+.exhibit-pitch-right textarea::placeholder {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(17, 17, 19, 0.6);
+}
+
+input[type=text]::placeholder  {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: rgba(17, 17, 19, 0.6);
+}
+
+.exhibit-pitch-right button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    font-weight: 500;
+    font-size: 16px;
+
+    width: 100%;
+
+    /* tweet */
+
+    background: #CBAB81;
+
+}
+
+.exhibit-pitch-right button:hover {
+    color: var(--color-black);
+}
+
+/* ============ MEDIA QUERIES (MEDIUM DEVICES) ========== */
+@media screen and (max-width: 1024px) {
+    .exhibitor-main {
+        width: var(--container-width-md);
+    }
+}
+
+
+/* ============ MEDIA QUERIES (SMALL DEVICES) ========== */
+@media screen and (max-width: 767px) {
+    .exhibitor-main {
+        width: var(--container-width-sm);
+    }
+
+    .exhibitor-text h2 {
+        font-size: 28px;
+        line-height: 40px ;
+    }
+
+    .exhibitor-pitch {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 10px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 20px;
+        height: auto;
+        padding: 0;
+      }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

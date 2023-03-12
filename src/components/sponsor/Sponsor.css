@@ -1,0 +1,306 @@
+.sponsor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    width: 100%;
+
+    background: url('../../assets/whiteL.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.sponsor-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px 0;
+
+    width: var(--container-width-lg);
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0px;
+    gap: 24px;
+}
+
+
+.main hr {
+    width: 1488.02px;
+    height: 0px;
+
+    border: 1px solid rgba(65, 65, 65, 0.11);
+}
+
+.main-pitch {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    align-items: start;
+    padding-top: 30px;
+}
+
+.pitch-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 0px;
+    gap: 10px;
+    align-self: flex-start;
+    
+    width: 100%;
+
+}
+
+.pitch-left p {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.pitch-box {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    gap: 10px;
+    align-items: start;
+}
+
+.box-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 50px;
+
+
+    /* tweet */
+
+    background: #CBAB81;
+    border-radius: 10px;
+}
+
+.box-left p {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 5px;
+    /* black */
+
+    color: #333333;
+    width: max-content;
+
+    transform: rotate(-90deg);
+}
+
+.box-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.box-right h2 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    color: var(--color-black);
+
+    text-shadow: 2px 10px 4px rgba(255, 255, 255, 0.2);
+}
+
+.box-right p {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    width: 90%;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    /* black */
+
+    color: #333333;
+
+    margin: 0;
+    
+}
+
+.main-sections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    padding: 0px;
+
+    width: 1488px;
+    height: 652px;
+}
+
+.sponsor-sec {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 26px;
+
+    width: 739px;
+    height: 310px;
+}
+
+.sponsor-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 228px;
+    height: 100px;
+
+    /* tweet */
+
+    background: #CBAB81;
+    border-radius: 10px;
+    transform: rotate(90deg);
+}
+
+.sponsor-text p {
+    width: 135px;
+    height: 48px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 48px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* black */
+
+    color: #333333;
+
+}
+
+.sponsor-become {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 0px; 
+    gap: 6px;
+
+    width: 613px;
+    height: 310px;
+}
+
+.sponsor-become p {
+    width: 613px;
+    height: 216px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+
+    /* black */
+
+    color: #333333;
+}
+
+
+/* ============ MEDIA QUERIES (MEDIUM DEVICES) ========== */
+@media screen and (max-width: 1024px) {
+    .sponsor-main {
+        width: var(--container-width-md);
+    }
+}
+
+
+
+/* ============ MEDIA QUERIES (SMALL DEVICES) ========== */
+@media screen and (max-width: 767px) {
+    .sponsor-main {
+        width: var(--container-width-sm);
+    }
+    
+    .sponsor-main .main h2 {
+        font-size: 28px;
+        line-height: 40px ;
+        width: 33%;
+    }
+
+
+    .box-right h2 {
+        font-size: 20px;
+    }
+
+    .main-pitch {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pitch-box {
+        gap: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

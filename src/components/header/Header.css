@@ -1,0 +1,257 @@
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20rem 0rem;
+    gap: 10px;
+    background: url('../../assets/blackL.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+
+    width: 100%;
+    height: 100vh;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 6rem;
+    justify-content: center;
+    width: var(--container-width-lg);
+    height: 100%;
+}
+
+.title h2 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    line-height: 100%;
+    letter-spacing: 9px;
+
+    color: #CBAB81;
+
+    text-shadow: 2px 10px 4px rgba(255, 255, 255, 0.2);
+}
+
+.speakers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 1rem;
+}
+
+.speaker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 1rem;
+}
+
+.texticon {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.texticon2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+
+.speak-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    grid-template-columns: auto;
+    width: 100%;
+    gap: 10px;
+    position: relative;
+}
+
+.speak-text p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    width: max-content;
+    color: #FFFFFF;
+}
+
+.speak-text span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #CBAB81;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.subtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+    gap: 5px;
+}
+
+.subtitle p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    color: #CBAB81;
+}
+
+.subtitle p span {
+    color: var(--color-white);
+    padding-left: 14px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.getVideo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+
+}
+
+.getVideo button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    /* text */
+
+    background: #CBAB81;
+    border-radius: 10px;
+
+}
+
+.getVideo .video {
+    background: none;
+    border: 2px solid #CBAB81;
+    color: var(--color-white);
+}
+
+.getVideo button:hover {
+    background: none;
+    border: 2px solid #CBAB81;
+    color: var(--color-white);
+}
+
+.getVideo .video:hover {
+    background: #CBAB81;
+    color: var(--color-black);
+}
+
+/* ============ MEDIA QUERIES (MEDIUM DEVICES) ========== */
+@media screen and (max-width: 1024px) {
+    header {
+        height: 68vh;
+        width: 100vw;
+    }
+
+    .header {
+        width: var(--container-width-md);
+        margin-top: 3rem;
+    }
+
+    .title h2 {
+        font-size: 50px;
+    }
+
+    .speakers {
+        padding-top: .5rem;
+    }
+}
+
+
+
+/* ============ MEDIA QUERIES (SMALL DEVICES) ========== */
+@media screen and (max-width: 767px) {
+    header {
+        height: 100vh;
+    }
+
+    .header {
+        width: var(--container-width-sm);
+    }
+
+    .title h2 {
+        font-size: 40px;
+    }
+
+    .speakers {
+        padding-top: .5rem;
+    }
+
+    .texticon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0px;
+    }
+    
+    .texticon2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0px;
+    }
+
+    .speak-text {
+        gap: 0px;
+    }
+    .speak-text {
+        margin: 0;
+        padding: 0;
+    }
+
+    .getVideo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
