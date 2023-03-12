@@ -1,5 +1,27 @@
 import './Sponsor.css'
 
+const data = [
+  {
+    id: 1,
+    price: '1,500',
+    title: 'Become our basic sponsor',
+    desc: "Brand logo on all materials, Joint announcement on all socials, Partnership announcement on Twitter space, 10Mins product pitch and Q/A session, Company’s recent objective on brochures, Booth Space"
+  },
+  {
+    id: 2,
+    price: '5,000',
+    title: 'Become our exclusive sponsor',
+    desc: "Brand logo on all materials, Joint announcement on all socials, Partnership announcement on Twitter space, 10Mins product pitch and Q/A session, Company’s recent objective on brochures, Booth Space"
+  },
+  {
+    id: 3,
+    price: '20,000',
+    title: 'Become our premium sponsor',
+    desc: "Brand logo on all materials Joint announcement on all socials Partnership announcement on Twitter space 10Mins product pitch and Q/A sessionCompany’s recent objective on brochures, On-site QR Code to social media & Bonus TV's Advert on sponsorship value, Access attendee contacts, Booth Space"
+  },
+]
+
+
 const Sponsor = () => {
   return (
     <div className='sponsor'>
@@ -10,54 +32,23 @@ const Sponsor = () => {
         </div>
 
         <div className="main-pitch">
-          <div className="pitch-left">
-              <div className="pitch-box">
-                <div className="box-left">
-                  <p>$500</p>
-                </div>
-                <div className="box-right">
-                  <h2>Become our exclusive sponsor</h2>
-                  <p>By becoming an exhibitor, you'll have the opportunity 
-                  to demonstrate your products in a hands-on environment, engage with potential 
-                  customers, and build relationships with industry influencers. With the right 
-                  approach, you can leverage your trade show presence to generate leads, close deals, 
-                  and establish your brand as a leader in your industry.</p>
-                </div>
-              </div>
-              
-          </div>
-          <div className="pitch-left">
-              <div className="pitch-box">
-                <div className="box-left">
-                  <p>$500</p>
-                </div>
-                <div className="box-right">
-                  <h2>Become our exclusive sponsor</h2>
-                  <p>By becoming an exhibitor, you'll have the opportunity 
-                  to demonstrate your products in a hands-on environment, engage with potential 
-                  customers, and build relationships with industry influencers. With the right 
-                  approach, you can leverage your trade show presence to generate leads, close deals, 
-                  and establish your brand as a leader in your industry.</p>
-                </div>
-              </div>
-              
-          </div>
-          <div className="pitch-left">
-              <div className="pitch-box">
-                <div className="box-left">
-                  <p>$500</p>
-                </div>
-                <div className="box-right">
-                  <h2>Become our exclusive sponsor</h2>
-                  <p>By becoming an exhibitor, you'll have the opportunity 
-                  to demonstrate your products in a hands-on environment, engage with potential 
-                  customers, and build relationships with industry influencers. With the right 
-                  approach, you can leverage your trade show presence to generate leads, close deals, 
-                  and establish your brand as a leader in your industry.</p>
-                </div>
-              </div>
-              
-          </div>
+          {
+            data.map(({id, price, title, desc}) => {
+              return (
+                  <div className="pitch-left">
+                    <div key={id} className="pitch-box">
+                      <div className="box-left">
+                        <p>${parseInt(price.replace(",", ""))}</p>
+                      </div>
+                      <div className="box-right">
+                        <h3>{title}</h3>
+                        <p>{desc}</p>
+                      </div>
+                    </div>
+                  </div>
+                )
+              })
+            }
         </div>
 
       </div>

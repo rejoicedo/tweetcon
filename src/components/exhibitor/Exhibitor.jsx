@@ -16,7 +16,7 @@ const Exhibitor = () => {
                 <p>$500</p>
               </div>
               <div className="exhibit-box-right">
-                <h2>Pitch at Tweet Conference 3.0</h2>
+                <h3>Pitch at Tweet Conference 3.0</h3>
                 <p>10Mins product pitch and Q/A session</p>
               </div>
             </div>

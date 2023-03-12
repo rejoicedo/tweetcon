@@ -59,8 +59,9 @@ footer {
 }
 
 .footer-middle img {
-    width: 150px;
-    height: 150px;
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
 }
 
 .mid-icontext {
@@ -154,32 +155,34 @@ footer {
 
 /* ============ MEDIA QUERIES (MEDIUM DEVICES) ========== */
 @media screen and (max-width: 1024px) {
-    
+    .footer {
+        width: var(--container-width-md);
+    }
 }
 
 
 
 /* ============ MEDIA QUERIES (SMALL DEVICES) ========== */
 @media screen and (max-width: 767px) {
-    .sponsor-main {
+    .footer {
         width: var(--container-width-sm);
-    }
-    
-    .sponsor-main h2 {
-        font-size: 28px;
+        text-align: center;
     }
 
-    .box-right h2 {
+    footer .footer-top h2 {
         font-size: 20px;
+        line-height: 25px ;
+        width: 100%;
     }
 
-    .main-pitch {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+
+
+    .footer-bottom h6 {
+        font-size: 16px;
     }
 
-    .pitch-box {
-        gap: 30px;
+    .footer-bottom p {
+        font-size: 16px;
     }
 }
 

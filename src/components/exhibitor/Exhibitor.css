@@ -27,7 +27,6 @@
     padding: 0px;
     gap: 24px;
 
-    width: 944px;
     padding-bottom: 16px;
 }
 
@@ -240,8 +239,13 @@ input[type=text]::placeholder  {
     }
 
     .exhibitor-text h2 {
-        font-size: 28px;
-        line-height: 40px ;
+        font-size: 22px;
+        line-height: 25px ;
+    }
+
+    .exhibitor-text h3 {
+        font-size: 20px;
+        line-height: 25px ;
     }
 
     .exhibitor-pitch {

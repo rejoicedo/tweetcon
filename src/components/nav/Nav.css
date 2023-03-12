@@ -23,8 +23,8 @@ nav {
 }
 
 img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 button {
@@ -50,6 +50,15 @@ button {
         width: var(--container-width-sm);
     }
 
+    .getVideo {
+        margin: 20px 0px;
+    }
+
+    .navbar img {
+        margin-top: 16px;
+        width: 70px !important;
+        height: 70px !important;
+    }
     
     .navbar button {
         display: none !important;
